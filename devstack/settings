@@ -25,7 +25,7 @@ CLOUDKITTY_BACKEND=${CLOUDKITTY_BACKEND:-sqlite}
 
 # Set cloudkitty repository
 CLOUDKITTY_REPO=${CLOUDKITTY_REPO:-${GIT_BASE}/openstack/cloudkitty.git}
-CLOUDKITTY_BRANCH=${CLOUDKITTY_BRANCH:-master}
+CLOUDKITTY_BRANCH=${CLOUDKITTY_BRANCH:-stable/ocata}
 
 # Set CloudKitty connection info
 CLOUDKITTY_SERVICE_HOST=${CLOUDKITTY_SERVICE_HOST:-$SERVICE_HOST}
@@ -51,12 +51,12 @@ CLOUDKITTY_OUTPUT_PIPELINE=${CLOUDKITTY_OUTPUT_PIPELINE:-"osrf"}
 # Set Cloudkitty client info
 GITREPO["python-cloudkittyclient"]=${CLOUDKITTYCLIENT_REPO:-${GIT_BASE}/openstack/python-cloudkittyclient.git}
 GITDIR["python-cloudkittyclient"]=$DEST/python-cloudkittyclient
-GITBRANCH["python-cloudkittyclient"]=${CLOUDKITTYCLIENT_BRANCH:-master}
+GITBRANCH["python-cloudkittyclient"]=${CLOUDKITTYCLIENT_BRANCH:-stable/ocata}
 
 # Set CloudKitty dashboard info
 GITREPO["cloudkitty-dashboard"]=${CLOUDKITTYDASHBOARD_REPO:-${GIT_BASE}/openstack/cloudkitty-dashboard.git}
 GITDIR["cloudkitty-dashboard"]=$DEST/cloudkitty-dashboard
-GITBRANCH["cloudkitty-dashboard"]=${CLOUDKITTYDASHBOARD_BRANCH:-master}
+GITBRANCH["cloudkitty-dashboard"]=${CLOUDKITTYDASHBOARD_BRANCH:-stable.ocata}
 
 # Tell Tempest this project is present
 TEMPEST_SERVICES+=,cloudkitty
